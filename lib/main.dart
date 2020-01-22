@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void sendSMS() async {
-    const sms = 'sms:01145907251';
+    const sms = 'sms:011459072';
     if (await canLaunch(sms)) {
       await launch((sms));
     } else {
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void makeCallPhone() async {
-    const telNumber = 'tel:01145907251';
+    const telNumber = 'tel:011459072';
     if (await canLaunch(telNumber)) {
       await launch((telNumber));
     } else {
